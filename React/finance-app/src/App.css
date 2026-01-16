@@ -1,0 +1,123 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  padding: 20px 0;
+  background: linear-gradient(90deg, #4b6cb7, #182848);
+  color: white;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.balance-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.balance-card, .income-card, .expense-card {
+  background: white;
+  padding: 20px;
+  flex: 1;
+  min-width: 150px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+}
+
+.balance-amount.positive { color: green; }
+.balance-amount.negative { color: red; }
+.income-amount { color: green; font-weight: bold; }
+.expense-amount { color: red; font-weight: bold; }
+
+.form-section {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+}
+
+.transaction-form input,
+.transaction-form textarea {
+  display: block;          /* force each input to a new line */
+  width: 100%;             /* full width */
+  padding: 10px;
+  margin-bottom: 15px;     /* gap between inputs */
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.transaction-form textarea {
+  height: 100px;           /* bigger box for description */
+  resize: vertical;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  gap: 5px;    
+}
+
+.checkbox-label input[type="checkbox"] {
+  margin: 0;
+  width: 16px;
+  height: 16px;
+}
+
+
+
+.submit-btn {
+  background-color: #4b6cb7;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-btn:hover { background-color: #182848; }
+
+.table-section {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+}
+
+.transactions-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.transactions-table th,
+.transactions-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.transactions-table td.income { color: green; }
+.transactions-table td.expense { color: red; }
+
+.no-transactions {
+  text-align: center;
+  font-style: italic;
+  color: #666;
+}
